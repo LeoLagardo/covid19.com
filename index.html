@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <title>Covid19 India</title>
+
+
+</head>
+
+<body>
+    <div class="header bg-dark sticky-top">
+        <h1 class="text-danger text-center">Covid-19 India</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="total">
+            <div class="row text-center">
+                <div class="col alert alert-danger mr-1">
+                    Confirmed
+                    <p id="totalConf" class="text-danger text-lg"></p>
+                </div>
+                <div class="col alert alert-warning mr-1">
+                    Active
+                    <p id="totalAct" class="text-warning"></p>
+                </div>
+                <div class="col alert alert-success mr-1">
+                    Recovered
+                    <p id="totalRec" class="text-success"></p>
+                </div>
+                <div class="col alert alert-secondary">
+                    Deceased
+                    <p id="totalDea" class="text-secondary"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 text-center" id="showTime">
+                time
+            </div>
+        </div>
+
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col" data-column="state" data-order="desc">State/UT</th>
+                    <th scope="col" data-column="confirmed" data-order="desc">Confirmed</th>
+                    <th scope="col" data-column="active" data-order="desc">Active</th>
+                    <th scope="col" data-column="recovered" data-order="desc">Recovered</th>
+                    <th scope="col" data-column="deceased" data-order="desc">Deceased</th>
+                </tr>
+            </thead>
+            <tbody id="casesTable">
+                
+            </tbody>
+        </table>
+
+    </div>
+
+    <footer class="bg-secondary text-center">
+        <small>All information is taken from api.covid19india.org </small>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

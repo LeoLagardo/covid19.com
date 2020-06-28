@@ -1,0 +1,43 @@
+@font-face {
+    font-family: outLine;
+    src: url('./font/Boldness\ Outline\ 250.otf');
+}
+@font-face {
+    font-family: Regular;
+    src: url('./font/Boldness\ Regular\ 400.otf');
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-weight: 500;
+}
+
+table th{
+    font-family: Regular;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+h1{
+    font-family: outLine;
+}
+
+
+
+.header{
+    height: 10vh;
+}
+
+.total{
+    margin-top: 5px;
+}
+
+
+@media (max-width: 500px){
+   *{
+       font-size: 12px;
+   }
+}
