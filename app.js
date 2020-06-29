@@ -3,8 +3,6 @@ let jsondata = [];
 fetch("https://api.covid19india.org/data.json").then(function (response) {
     return response.json();
 }).then(function (data) {
-
-    //console.log(data.statewise[0].state);
     //console.log(data.statewise[0].confirmed);
 
     let Initjsondata = [];
@@ -12,7 +10,6 @@ fetch("https://api.covid19india.org/data.json").then(function (response) {
         Initjsondata.push([i, data[i]]);
 
     jsondata = Initjsondata[1][1];
-
     pushData(jsondata);
     totalData(jsondata);
 });
