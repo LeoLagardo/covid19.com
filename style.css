@@ -28,6 +28,28 @@ h1 {
     font-family: outLine;
 }
 
+img {
+    cursor: pointer;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 .header {
     height: 10vh;
 }
@@ -41,4 +63,5 @@ h1 {
     .container {
         font-size: 12px;
     }
+
 }
