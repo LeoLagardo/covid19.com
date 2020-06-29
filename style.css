@@ -58,6 +58,10 @@ img {
     margin-top: 5px;
 }
 
+table th{
+    position: sticky;
+    top:0;
+}
 
 @media (max-width: 500px) {
     .container {
